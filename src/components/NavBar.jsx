@@ -2,21 +2,23 @@ import React from 'react'
 
 import { FaBars, FaTimes, FaGithub, FaDiscord, FaInstagram  } from 'react-icons/fa'
 
+import {Link} from 'react-scroll'
+
 export const NavBar = () => {
 
   const [nav, setNav] = React.useState(false)
 
   const links = [
     {
-      name: 'Home',
+      name: 'home',
       id: 1,
     },
     {
-      name: 'About',
+      name: 'about',
       id: 2,
     },
     {
-      name: 'Experience',
+      name: 'experience',
       id: 3,
     },
     {
@@ -59,7 +61,7 @@ export const NavBar = () => {
       {links.map(({id, name}) => {
         return (
           <li key={id} className='mr-4 cursor-pointer capitalize bg-transparent hover:bg-blue-800 text-white font-semibold hover:text-white py-2 px-4  hover:border-transparent rounded'>
-            {name}
+            <Link to={name} smooth duration={500}>{name}</Link>
           </li>
         )
       })}
@@ -69,7 +71,7 @@ export const NavBar = () => {
       </div>
       
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 text-white">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-blue-300 via-blue-400 to-blue-500 text-white">
         
         <div className='flex justify-center items-center '>
         <h1 className="text-5xl font-signature">Levi Meert</h1>
@@ -78,7 +80,12 @@ export const NavBar = () => {
         {links.map(({id, name}) => {
           return (
             <li key={id} className='mr-4 cursor-pointer capitalize bg-transparent hover:font-bold text-white text-4xl py-2 px-4  hover:border-transparent rounded'>
-              {name}
+              <Link
+              onClick={() => setNav(!nav)}
+              to={name}
+              smooth
+              duration={250}
+              >{name}</Link>
             </li>
           )
         })}
