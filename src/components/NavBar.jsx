@@ -52,15 +52,17 @@ export const NavBar = () => {
   ]
 
   return (
-    <nav className='flex justify-between items-center w-full h-20 px-4 text-white fixed bg-transparent text-white'>
+    <nav className='flex absolute justify-between items-center w-full h-20 px-4 text-white bg-transparent'>
     
-    <h1 className="text-5xl font-signature ml-2">Levi Meert</h1>
+    <h1 className="text-5xl inline border-b-4 ml-2 border-white py-2 ">Vyznite</h1>
 
     <ul className='hidden xl:flex'>
 
       {links.map(({id, name}) => {
+
+        
         return (
-          <li key={id} className='mr-4 cursor-pointer capitalize bg-transparent hover:bg-blue-800 text-white font-semibold hover:text-white py-2 px-4  hover:border-transparent rounded'>
+          <li key={id} className='mr-4 cursor-pointer hover:scale-125 duration-500 capitalize bg-transparent hover:font-bold text-white font-semibold hover:text-white py-2 px-4  hover:border-transparent rounded'>
             <Link to={name} smooth duration={500}>{name}</Link>
           </li>
         )
@@ -74,7 +76,7 @@ export const NavBar = () => {
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-blue-300 via-blue-400 to-blue-500 text-white">
         
         <div className='flex justify-center items-center '>
-        <h1 className="text-5xl font-signature">Levi Meert</h1>
+        <h1 className="text-5xl">Vyznite</h1>
         </div>
 
         {links.map(({id, name}) => {
