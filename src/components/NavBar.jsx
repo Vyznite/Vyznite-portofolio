@@ -47,7 +47,7 @@ export const NavBar = () => {
       icon : <FaInstagram size={30}/>,
       id: 3,
       background: 'bg-pink-500',
-    href: 'https://instagram.com/levi.meert'
+    href: 'https://instagram.com/Vyznite'
     },
   ]
 
