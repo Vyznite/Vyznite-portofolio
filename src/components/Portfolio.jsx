@@ -32,11 +32,11 @@ export const Portfolio = () => {
     ]
 
     return (
-    <div name='experience' className='bg-gradient-to-b from-blue-700 via-blue-800 to-blue-900 w-full h-screen'>
+    <div name='experience' className='bg-gradient-to-b from-blue-700 via-blue-800 to-blue-900'>
 
         <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
 
-            <div>
+            <div className='pb-8'>
                 <p className='text-4xl font-bold text-white inline border-b-4'>languages</p>
                 <p className='py-6'>These are the languages  I've worked with</p>
             </div>
