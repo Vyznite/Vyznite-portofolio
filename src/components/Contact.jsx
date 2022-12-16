@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
-import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 export const Contact = () => {
 
