@@ -15,7 +15,7 @@ export const Home = () => {
         <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
             <div className='flex flex-col justify-center h-full'>
                 <h1 className="text-4xl sm:text-7xl font-bold text-white">
-                Junior Full Stack Developer
+                Junior Full Stack Developer2
                 </h1>
                 <p className=" text-base py-4 text-white">{text}</p>
             
