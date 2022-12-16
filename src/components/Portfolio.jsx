@@ -44,7 +44,7 @@ export const Portfolio = () => {
         <div className='pb-8'>
               <p className='text-5xl md:text-7xl tracking-wider font-bold text-white inline uppercase '>FRAMEWORK'S & TALEN</p>
               <p className='font-semibold mt-2 pt-2 text-white '>Dit zijn de Framework's en talen waarmee ik heb gewerkt</p>
-              <p className='xl:hidden font-semibold mt-2'>Gebruik desktop voor de descriptions te lezen!</p>
+              <p className='xl:hidden font-semibold mt-2 text-white'>Gebruik desktop voor de descriptions te lezen!</p>
             </div>
 
         <div className='w-full grid grid-cols-2 sm:grid-cols-3 mx-auto gap-8 text-center py-8 px-12 sm:px-0 text-white '>
